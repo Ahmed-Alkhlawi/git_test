@@ -1,8 +1,9 @@
 div.centered-img {
 
 	width: 15em;
-	margin: 13em 0em 0em 48em;
-	position:absolute;
+	margin-top: 0px;
+	padding-top: 12em;
+
 }
 
 div.centered-img img {
@@ -12,13 +13,27 @@ div.centered-img img {
 
 div.nav-bar {
 
-	float:right;
-	padding-top: 6px;
-	padding-right: 17px;
+	margin-left: 92em;
 }
 
-div.nav-bar a {
-	
+
+
+div.nav-bar li {
+
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+ 	float:left;
+
+}
+
+div.nav-bar li a {
+
+
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
 	font-family: arial,sans-serif;
 	font-size: 1em;
 	color: black;
@@ -37,7 +52,7 @@ div.nav-bar a:hover {
 }
 
 div.nav-bar a#selectbox img {
-	height: 1.2em;
+	height: 1.8em;
 	display: inline-block;
 
 }
@@ -65,25 +80,100 @@ div.nav-bar a#signin:hover {
 
 div.search_button {
 
-	    margin-top: -14em;
-	    padding-left: 7em;
+	padding-left: 50em;
+	border: medium none;
+	margin-top: 1.5em;
+}
+
+div.search_button button {
+	border: none;
+	height: 2.5em;
+	width: auto;
+	font-size: 0.8em;
+	background-color: rgba(87, 87, 87, 0.17);
+	opacity: 0.65;
+}
+
+div.search_button button:hover {
+
+	border:1px solid rgba(113, 113, 113, 0.34);
+	opacity:1;
+	color: black;
+	
 }
 
 div.search_field_div {
 
+	width: 35em;
 	text-decoration: none;
+	border: 1px solid rgba(80, 80, 80, 0.31);
+	height: 2.3em;
 }
 
-div.search_field_div#search_field {
+div.search_field_div input#search_field {
 	
-	height: 3em;
-	width: 34em;
+	border:none;
+	height: 2em;
+	width: 36em;
+	padding-left: 7px;
 
 }
 
 div.search_box {
 
-	margin-top: 315px; 
-	margin-left: 650px;
-	display:inline-block;
+    border: 1px solid #FFF;
+    padding-left: 40em;
+    padding-top: 1em;
+
+}
+
+div.footer_box {
+	
+	position:fixed;
+	margin-top: 33.5em;
+	margin-left: -2.7em;
+}
+
+
+div.footer_box ul.footer_list li {
+	   list-style-type: none;
+    	margin: 0;
+    	padding: 0;
+    	overflow: hidden;
+ 		float:left;
+
+ 		text-align: center;
+    	text-decoration: none;
+		font-family: arial,sans-serif;
+		font-size: 1em;
+		color: black;
+		text-decoration: none;
+		padding-right: 1.2em;
+		line-height: 1em;
+		outline: medium none;
+		vertical-align: middle;
+		opacity: 0.75;
+		background: none repeat scroll 0% 0% #F2F2F2;
+		border-top: 1px solid #E4E4E4;
+		line-height: 40px;
+		
+}
+
+
+
+
+div.footer_box ul.footer_list li#right {
+	float:left;
+	padding-left: 74em;
+}
+
+div.footer_box ul.footer_list li a {
+	color: #080808;
+	opacity: 0.70;
+	text-decoration: none;
+}
+
+div.footer_box ul.footer_list li a:hover {
+	opacity: 0.85;
+	text-decoration: underline;
 }

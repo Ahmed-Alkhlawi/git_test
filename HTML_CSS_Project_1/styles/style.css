@@ -1,3 +1,10 @@
+html, body {
+
+ height: 100%;
+
+}
+
+
 div.centered-img {
 
 	width: 15em;
@@ -13,7 +20,9 @@ div.centered-img img {
 
 div.nav-bar {
 
-	margin-left: 92em;
+	height: 1em;
+	float: right;
+
 }
 
 
@@ -21,33 +30,30 @@ div.nav-bar {
 div.nav-bar li {
 
     list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
- 	float:left;
+	display: inline-block;
 
 }
 
 div.nav-bar li a {
 
 
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
 	font-family: arial,sans-serif;
 	font-size: 1em;
-	color: black;
+	color: #000;
 	text-decoration: none;
-	padding-right: 1.2em;
-	line-height: 1em;
+	opacity: 0.75;
+	text-align: right;
+	padding: 0em 1.2em 0em 1em;
+	line-height: 2em;
 	outline: medium none;
 	vertical-align: middle;
-	opacity: 0.75;
-	
 
 }
+	
+
+
 div.nav-bar a:hover {
-	opacity: 0.85;
+	opacity: 0.95;
 	text-decoration: underline;
 }
 
@@ -80,7 +86,6 @@ div.nav-bar a#signin:hover {
 
 div.search_button {
 
-	padding-left: 50em;
 	border: medium none;
 	margin-top: 1.5em;
 }
@@ -99,7 +104,7 @@ div.search_button button:hover {
 	border:1px solid rgba(113, 113, 113, 0.34);
 	opacity:1;
 	color: black;
-	
+
 }
 
 div.search_field_div {
@@ -121,59 +126,57 @@ div.search_field_div input#search_field {
 
 div.search_box {
 
-    border: 1px solid #FFF;
-    padding-left: 40em;
+    border: 0.1em solid #FFF;
+  
     padding-top: 1em;
 
 }
 
 div.footer_box {
 	
-	position:fixed;
-	margin-top: 33.5em;
-	margin-left: -2.7em;
+	position: fixed;
+ 	bottom: 0;
+ 	width: 100%;
 }
 
+div.footer_box ul.footer_list {
 
-div.footer_box ul.footer_list li {
-	   list-style-type: none;
-    	margin: 0;
-    	padding: 0;
-    	overflow: hidden;
- 		float:left;
-
- 		text-align: center;
-    	text-decoration: none;
-		font-family: arial,sans-serif;
-		font-size: 1em;
-		color: black;
-		text-decoration: none;
-		padding-right: 1.2em;
-		line-height: 1em;
+		line-height: 2em;
 		outline: medium none;
 		vertical-align: middle;
 		opacity: 0.75;
 		background: none repeat scroll 0% 0% #F2F2F2;
 		border-top: 1px solid #E4E4E4;
-		line-height: 40px;
-		
+
+}
+
+div.footer_box ul.footer_list li {
+	    
+	    list-style-type: none;   
+    	padding: 0px 1.2em 0px 0px;    	
+ 		float:left;
+ 		text-align: center;
+		font-family: arial,sans-serif;
+		font-size: 1em;
+		color: black;
+		text-decoration: none;		
+		display:inline-block;
 }
 
 
 
-
-div.footer_box ul.footer_list li#right {
-	float:left;
-	padding-left: 74em;
+div.footer_box ul.footer_list li#right{
+	float:right;
+	
 }
 
-div.footer_box ul.footer_list li a {
+div.footer_box ul.footer_list li a, div.footer_box ul.footer_list_right li a {
 	color: #080808;
 	opacity: 0.70;
 	text-decoration: none;
 }
 
-div.footer_box ul.footer_list li a:hover {
+div.footer_box ul.footer_list li a:hover, div.footer_box ul.footer_list_right li a:hover {
 	opacity: 0.85;
 	text-decoration: underline;
 }

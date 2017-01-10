@@ -1,0 +1,145 @@
+</!DOCTYPE html>
+<html>
+<head>
+	<title>Rock Paper Scissors !</title>
+	<link rel="stylesheet" type="text/css" href="styles/style.css">
+	<script type="text/javascript">
+
+	var player_score = 0;
+	var computer_score = 0;
+
+var compare = function(choice1)
+{
+
+	var computerChoice = Math.random();
+	
+	if (computerChoice < 0.34) {
+			computerChoice = "rock";
+			document.getElementById('right_choice_img').src = "images/rock.png";
+	} 
+	else if(computerChoice <= 0.67) {
+		computerChoice = "paper";
+		document.getElementById('right_choice_img').src = "images/paper.png";
+	}
+ 	else {
+		computerChoice = "scissors";
+		document.getElementById('right_choice_img').src = "images/scissors.png";
+	} 
+
+	document.getElementById('left_choice_img').src = "images/" + choice1 +".png";
+
+
+	var choice2 = computerChoice;
+
+
+
+
+       if(choice1 === choice2)
+       {
+           document.getElementById('result_player').innerHTML =  "The result is a tie!";
+           document.getElementById('result_computer').innerHTML =  "The result is a tie!";
+
+       }
+       else if(choice1 === "rock")
+       {
+           if(choice2 === "scissors")
+           {
+               document.getElementById('result_player').innerHTML =  "YOU WIN!!";
+               document.getElementById('result_computer').innerHTML =  "Computer lost...";
+               player_score = player_score + 1;
+           }
+           else
+           {
+                document.getElementById('result_player').innerHTML =  "You lost...";
+                document.getElementById('result_computer').innerHTML =  "COMPUTER WON!!";  
+              computer_score = computer_score + 1;
+           }
+           
+       }
+       
+       else if(choice1 === "paper")
+       {
+           if(choice2 === "scissors")
+           {
+               document.getElementById('result_player').innerHTML =  "You lost...";
+                document.getElementById('result_computer').innerHTML =  "COMPUTER WON!!";  
+              computer_score = computer_score + 1;
+           }
+           else
+           {
+               document.getElementById('result_player').innerHTML =  "YOU WIN!!";
+               document.getElementById('result_computer').innerHTML =  "Computer lost...";
+               player_score = player_score + 1;  
+           }
+           
+       }
+       
+           else if(choice1 === "scissors")
+       {
+           if(choice2 === "rock")
+           {
+               document.getElementById('result_player').innerHTML =  "You lost...";
+                document.getElementById('result_computer').innerHTML =  "COMPUTER WON!!";  
+              computer_score = computer_score + 1;
+           }
+           else
+           {
+               document.getElementById('result_player').innerHTML =  "YOU WIN!!";
+               document.getElementById('result_computer').innerHTML =  "Computer lost...";
+               player_score = player_score + 1;   
+           }
+           
+       }
+
+       document.getElementById('player_count').innerHTML = player_score;
+       document.getElementById('computer_count').innerHTML = computer_score;
+       
+}
+
+	</script>
+</head>
+<body>
+	<center>
+	<div class="choice_placement">
+		<p id="left_choice"> YOUR CHOICE </p>
+	<div class="left_choice_pad">
+		<img src="images/Question_mark.png" id="left_choice_img">
+		<p id="result_player"> </p> 
+	</div>
+		<p id="right_choice"> COMPUTER CHOICE </p>
+	<div class="right_choice_pad">
+		<img src="images/Question_mark.png" id="right_choice_img">
+		<p id="result_computer">   </p>
+	</div>
+	</div>
+		<p id="player_count"> 0 </p>
+		<p id="result">  RESULTS  </p>
+		<p id="computer_count"> 0 </p>
+
+		<img src="images/Computer.gif" id="computer_pic"> 
+		<img src="images/Pick_One.png" id="pick_one">
+
+		</center>
+
+	<div class="player_block">
+		<ul>
+			<li> 
+				<a href="#" onclick="compare('rock')">
+					<img src="images/rock.png">
+				</a>
+			</li>
+			<li> 
+				<a href="#" onclick="compare('paper')">
+					<img src="images/paper.png">
+				</a>
+			</li>
+			<li> 
+				<a href="#" onclick="compare('scissors')">
+					<img src="images/scissors.png">
+				</a> 
+			</li>
+		</ul>
+	</div>
+
+</body>
+</html>

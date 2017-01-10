@@ -1,0 +1,183 @@
+html, body {
+
+ height: 100%;
+
+}
+
+p#result {
+	display: inline;
+	font-family: Arial;
+	font-size: 3em;
+	margin-bottom: 0px;
+	color: #F31111;
+	margin-top: 0px;
+	
+}
+
+p#player_count {
+	
+	display: inline;
+	font-family: Arial;
+	font-size: 3em;
+	margin-bottom: 0px;
+	color: #F31111;
+	margin-top: 0px;
+	margin-right: 3em;
+}
+
+p#computer_count {
+
+	display: inline;
+	font-family: Arial;
+	font-size: 3em;
+	margin-bottom: 0px;
+	color: #F31111;
+	margin-top: 0px;
+	margin-left: 3em;
+}
+
+
+div.choice_placement p#left_choice {
+	text-align: left;
+	display: inline-block;
+	float: left;
+	font-family: Arial;
+	font-size: 2em;
+	margin-bottom: 0px;
+	color: rgba(2, 36, 155, 0.82);
+	margin-top: 1em;
+	margin-left: 3em;
+}
+
+div.choice_placement p#right_choice {
+	text-align: left;
+	display: inline-block;
+	float: right;
+	font-family: Arial;
+	font-size: 2em;
+	margin-bottom: 0px;
+	color: rgba(2, 36, 155, 0.82);
+	margin-top: 1em;
+	margin-right: 3em;
+}
+
+
+div.left_choice_pad {
+	border:4px solid black;
+	height: 34em;
+	display: inline-block;
+	float: left;
+	width: 29em;
+	margin-left: -20em;
+	margin-top: 6em;
+	position: relative;
+}
+div.left_choice_pad img#left_choice_img {
+	
+	display:inline-block;
+	height:auto;
+	width:100%;
+
+	max-width: 16em;
+}
+
+div.left_choice_pad p#result_player {
+	
+	margin-left: 1em;
+	margin-bottom: 1em;
+	font-family: Arial;
+	font-size: 3em;
+	
+	color: rgba(11, 164, 18, 0.88);
+	position: absolute;
+	bottom: 0px;
+}
+
+div.right_choice_pad {
+	height: 34em;
+	display: inline-block;
+	float: right;
+	border: 4px solid black;
+	width: 29em;
+	margin-top: 6em;
+	position: absolute;
+	margin-left: 23em;
+}
+
+div.right_choice_pad p#result_computer {
+
+	margin-left: 1em;
+	margin-bottom: 1em;
+	font-family: Arial;
+	font-size: 3em;
+	
+	color: rgba(11, 164, 18, 0.88);
+	position: absolute;
+	bottom: 0px;
+} 
+
+div.right_choice_pad img#right_choice_img {
+	
+	display:inline-block;
+	height:auto;
+	width:100%;
+
+	max-width: 16em;
+
+
+}
+
+
+img#computer_pic{
+
+	margin-right: -28em;
+	width: 100%;
+	height: auto;
+	max-width: 30em;
+	display: block;
+}
+
+
+
+img#pick_one{
+
+	margin-right: 38em;
+	display: block
+	width: 100%;
+	height: auto;
+	max-width: 30em;
+}
+
+ul li a img {
+	display:inline-block;
+	height:auto;
+	width:100%;
+
+	max-width: 16em;
+	padding-right: 13em;
+	padding-left: 5em;
+}
+
+div.player_block {
+
+ 	bottom: 0;
+ 	width: 100%;
+ }
+div.player_block ul{
+
+
+	margin-top: 0em;
+
+}
+div.player_block ul li{
+	display:inline-block;
+	padding-right: 12em
+	vertical-align: middle;
+	bottom:0;
+	list-style-type: none;
+	
+}
+
+div.player_block ul li a img:hover {
+	border:0.2em dotted black;
+}
